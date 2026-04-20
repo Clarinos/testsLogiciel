@@ -30,7 +30,7 @@ public class VoitureTest {
         voiture.setPrix(newPrix);
         voiture.setId(10);
         assertEquals(newMarque, voiture.getMarque);
-        assertEquals(prix, voiture.getPrix);
+        assertEquals(newPrix, voiture.getPrix);
         assertEquals(10, voiture.getId);
     }
 
