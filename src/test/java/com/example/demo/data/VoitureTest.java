@@ -10,17 +10,21 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @SpringBootTest
 public class VoitureTest {
 
+    private static String marque;
+    private static int prix;
+    private static Voiture voiture;
+
     @BeforeEach
     void initVoitureTest(){
-        String marque = "Renault";
-        int prix = 1000;
-        Voiture voiture = new Voiture(marque,prix);
+        VoitureTest.marque = "Renault";
+        VoitureTest.prix = 1000;
+        voiture = new Voiture(VoitureTest.marque,VoitureTest.prix);
     }
 
     @Test
     void creerVoiture(){
-        assertEquals(marque, voiture.getMarque);
-        assertEquals(prix, voiture.getPrix);
+        assertEquals(VoitureTest.marque, voiture.getMarque());
+        assertEquals(VoitureTest.prix, voiture.getPrix());
     }
 
     @Test
