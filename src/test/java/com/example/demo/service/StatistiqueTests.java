@@ -15,15 +15,13 @@ import static org.mockito.Mockito.*;
 @SpringBootTest
 public class StatistiqueTests {
 
-    private static StatistiqueImpl stat;
-
     @BeforeEach
     public void init(){
-        StatistiqueTests.stat = new StatistiqueImpl();
+        Statistique stat = new StatistiqueImpl();
         Voiture voiture1 = new Voiture("Renault", 1000);
         Voiture voiture2 = new Voiture("Peugeot", 4000);
-        StatistiqueTests.stat.ajouter(voiture1);
-        StatistiqueTests.stat.ajouter(voiture2);
+        stat.ajouter(voiture1);
+        stat.ajouter(voiture2);
         Echantillon echantillon = StatistiqueTests.stat.getPrixMoyen();
     }
 
