@@ -31,6 +31,7 @@ public class StatistiqueTests {
 
     }
 
+    
     @Test
     public void modifEchantillonRecu(){
         Echantillon echantillon = stat.prixMoyen();
