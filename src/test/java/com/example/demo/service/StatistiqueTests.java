@@ -22,7 +22,7 @@ public class StatistiqueTests {
         Voiture voiture2 = new Voiture("Peugeot", 4000);
         stat.ajouter(voiture1);
         stat.ajouter(voiture2);
-        Echantillon echantillon = StatistiqueTests.stat.getPrixMoyen();
+        Echantillon echantillon = stat.getPrixMoyen();
     }
 
     @Test
